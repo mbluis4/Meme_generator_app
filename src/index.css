@@ -6,7 +6,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  color: #ffff;
 }
 
 code {
@@ -20,6 +19,7 @@ header {
   background-image: linear-gradient(to right, #672280, #a626d3);
   height: 65px;
   padding: 1em;
+  color: #ffff;
 }
 
 header > h2 {
@@ -69,6 +69,39 @@ button:focus {
   background-image: linear-gradient(to left, #672280, #a626d3);
 }
 
-main > img {
-  width: 100%;
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
 }
